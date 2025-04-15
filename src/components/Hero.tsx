@@ -1,5 +1,4 @@
-
-import { ArrowDown } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -44,6 +43,34 @@ const Hero = () => {
             >
               Contact Me
             </Button>
+          </div>
+
+          {/* Social Links */}
+          <div className="flex gap-4 mt-6 animate-up delay-500">
+            <a 
+              href="https://github.com/yourusername" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white/70 hover:text-primary transition-colors"
+            >
+              <Github className="h-6 w-6" />
+            </a>
+            <a 
+              href="https://linkedin.com/in/yourusername" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white/70 hover:text-primary transition-colors"
+            >
+              <Linkedin className="h-6 w-6" />
+            </a>
+            <a 
+              href="https://twitter.com/yourusername" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white/70 hover:text-primary transition-colors"
+            >
+              <Twitter className="h-6 w-6" />
+            </a>
           </div>
         </div>
       </div>
