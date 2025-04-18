@@ -1,4 +1,4 @@
-import { ArrowDown, Github, Linkedin, Twitter } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Twitter, FileDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
@@ -55,6 +55,15 @@ const Hero = () => {
               onClick={() => document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Contact Me
+            </Button>
+            <Button 
+              variant="secondary" 
+              size="lg" 
+              className="border-secondary text-white hover:bg-secondary/10"
+              onClick={() => window.open('/resume.pdf', '_blank')}
+            >
+              <FileDown className="mr-2 h-5 w-5" />
+              Download Resume
             </Button>
           </div>
 
