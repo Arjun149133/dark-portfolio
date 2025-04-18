@@ -1,5 +1,6 @@
 import { ArrowDown, Github, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Hero = () => {
   return (
@@ -13,6 +14,18 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 z-10 py-20">
         <div className="flex flex-col items-center text-center">
+          {/* Profile Picture */}
+          <Avatar className="w-32 h-32 mb-6 border-4 border-primary/30 hover:scale-105 transition-transform duration-300 hover:rotate-3 animate-up delay-100">
+            <AvatarImage 
+              src="/placeholder.svg" 
+              alt="Your Profile Picture" 
+              className="object-cover"
+            />
+            <AvatarFallback className="bg-primary/10 text-primary">
+              JD
+            </AvatarFallback>
+          </Avatar>
+          
           <div className="inline-block mb-4 px-4 py-1 border border-primary/30 rounded-full bg-primary/5 text-primary animate-in delay-100">
             <span className="text-sm font-medium">Full Stack Developer</span>
           </div>
