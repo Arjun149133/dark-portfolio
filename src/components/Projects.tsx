@@ -47,7 +47,7 @@ const Projects = () => {
         "postgreSQL",
       ],
       liveUrl:
-        "https://www.loom.com/share/d99a66ef92e2485d9f7a0905a3a56b67?sid=56d34e82-b565-4a85-b340-4d7330d5310a",
+        "https://chess-application-web.vercel.app/",
       githubUrl: "https://github.com/Arjun149133/chess-application",
     },
     {
