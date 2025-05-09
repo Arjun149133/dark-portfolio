@@ -27,6 +27,7 @@ const Projects = () => {
       ],
       liveUrl: "https://algo-arena-web.vercel.app/",
       githubUrl: "https://github.com/Arjun149133/algo-arena",
+      live: true,
     },
     {
       id: 2,
@@ -46,9 +47,9 @@ const Projects = () => {
         "Express",
         "postgreSQL",
       ],
-      liveUrl:
-        "https://chess-application-web.vercel.app/",
+      liveUrl: "https://chess-application-web.vercel.app/",
       githubUrl: "https://github.com/Arjun149133/chess-application",
+      live: false,
     },
     {
       id: 3,
@@ -70,6 +71,7 @@ const Projects = () => {
       ],
       liveUrl: "https://collabdraw.arjunyadav.website",
       githubUrl: "https://github.com/Arjun149133/excalidraw-clone",
+      live: false,
     },
     {
       id: 4,
@@ -81,6 +83,7 @@ const Projects = () => {
       tags: ["Next.js", "Taiwind CSS", "Firebase", "FireStore", "Recoil"],
       liveUrl: "https://twitter-clone-psi-henna.vercel.app/",
       githubUrl: "https://github.com/Arjun149133/twitter-clone",
+      live: true,
     },
   ];
 
@@ -150,20 +153,22 @@ const Projects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center p-4">
                   <div className="flex gap-3">
-                    <Button
-                      size="sm"
-                      className="bg-primary hover:bg-primary/80"
-                      asChild
-                    >
-                      <a
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    {project.live && (
+                      <Button
+                        size="sm"
+                        className="bg-primary hover:bg-primary/80"
+                        asChild
                       >
-                        <ExternalLink className="h-4 w-4 mr-1" />
-                        Live Demo
-                      </a>
-                    </Button>
+                        <a
+                          href={project.liveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <ExternalLink className="h-4 w-4 mr-1" />
+                          Live Demo
+                        </a>
+                      </Button>
+                    )}
                     <Button
                       size="sm"
                       variant="outline"
