@@ -3,89 +3,10 @@ import { ExternalLink, Github, MousePointerClick } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { projects } from "@/lib/projects";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
-
-  const projects = [
-    {
-      id: 1,
-      title: "Algo-arena (Leetcode Clone)",
-      description:
-        "A Leetcode clone with a focus on algorithm challenges and community solutions.",
-      image: "/algo-arena.png",
-      category: "fullstack",
-      tags: [
-        "Next.js",
-        "Bun",
-        "Postgres",
-        "Judge0",
-        "Vercel",
-        "Tailwind CSS",
-        "Redis",
-        "TurboRepo",
-      ],
-      liveUrl: "https://algo-arena-web.vercel.app/",
-      githubUrl: "https://github.com/Arjun149133/algo-arena",
-      live: true,
-    },
-    {
-      id: 2,
-      title: "MultiPlayer Chess",
-      description:
-        "Real-time multiplayer chess game with user authentication and matchmaking.",
-      image: "/chess-game.png",
-      category: "fullstack",
-      tags: [
-        "Next.js",
-        "TypeScript",
-        "Tailwind CSS",
-        "WebSocket",
-        "Docker",
-        "TurboRepo",
-        "CI/CD",
-        "Express",
-        "postgreSQL",
-      ],
-      liveUrl: "https://chess-application-web.vercel.app/",
-      githubUrl: "https://github.com/Arjun149133/chess-application",
-      live: false,
-    },
-    {
-      id: 3,
-      title: "CollabDraw (Excalidraw Clone)",
-      description:
-        "Collaborative drawing app with real-time features and user authentication. Where users can create and share drawings.",
-      image: "/collabdraw.png",
-      category: "fullstack",
-      tags: [
-        "Next.js",
-        "Canvas",
-        "Shadcn",
-        "WebSocket",
-        "Docker",
-        "TurboRepo",
-        "CI/CD",
-        "Express",
-        "postgreSQL",
-      ],
-      liveUrl: "https://collabdraw.arjunyadav.website",
-      githubUrl: "https://github.com/Arjun149133/excalidraw-clone",
-      live: false,
-    },
-    {
-      id: 4,
-      title: "Twitter Clone",
-      description:
-        "A Twitter clone with user authentication, real-time updates, and a responsive design.",
-      image: "/twitter-clone.png",
-      category: "fullstack",
-      tags: ["Next.js", "Taiwind CSS", "Firebase", "FireStore", "Recoil"],
-      liveUrl: "https://twitter-clone-psi-henna.vercel.app/",
-      githubUrl: "https://github.com/Arjun149133/twitter-clone",
-      live: true,
-    },
-  ];
 
   const filters = [
     { name: "All", value: "all" },
